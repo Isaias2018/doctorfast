@@ -1,0 +1,32 @@
+<div>
+    <div>
+        <h1>Los pacientes te necesitan</h1>
+        <p>Aprueba o cancela las atenciones, no sin antes ver el detalle</p>
+    </div>
+    <table class="table table-striped table-doctor-main">
+        <thead>
+          <tr>
+            <th scope="col" class="text-center">Codigo</th>
+            <th scope="col" class="text-center">Area del Sintoma</th>
+            <th scope="col" class="text-center">Fecha</th>
+            <th scope="col" class="text-center">Detalle</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let appointment of listAppointments">
+                <td class="text-center">{{appointment.codigoCita}}</td>
+                <td class="text-center">{{appointment.areaSintoma.nombre}}</td>
+                <td class="text-center">{{appointment.fechaCita | date: 'longDate'}}</td>
+
+                <td class="text-center">
+                    <a (click)="viewAppointment()" class="btn btn-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                        </svg>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+</div>
