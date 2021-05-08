@@ -7,16 +7,19 @@
         <thead>
           <tr>
             <th scope="col" class="text-center">Codigo</th>
-            <th scope="col" class="text-center">Area del Sintoma</th>
             <th scope="col" class="text-center">Fecha</th>
+            <th scope="col" class="text-center">Area del Sintoma</th>
+            <th scope="col" class="text-center">Descripción</th>
             <th scope="col" class="text-center">Detalle</th>
           </tr>
         </thead>
         <tbody>
             <tr *ngFor="let appointment of listAppointments">
                 <td class="text-center">{{appointment.codigoCita}}</td>
-                <td class="text-center">{{appointment.areaSintoma.nombre}}</td>
                 <td class="text-center">{{appointment.fechaCita | date: 'longDate'}}</td>
+                <td class="text-center">{{appointment.areaSintoma.nombre}}</td>
+                <td class="text-center">{{appointment.areaSintoma.descripcion}}</td>
+
 
                 <td class="text-center">
                     <a (click)="viewAppointment()" class="btn btn-info">

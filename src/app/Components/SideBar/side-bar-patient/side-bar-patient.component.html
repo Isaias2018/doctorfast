@@ -10,6 +10,9 @@
 
         </div>
         <ul class="lisst-unstyled components">
+          <div class="text-center" class="text-light bg-dark">
+            <p class="text-center">Bienvenido <span>{{patient.usuario.nombre}}</span></p>
+          </div>
             <li>
                 <a routerLink="main-patient" routerLinkActive="activo">
                     <div  class="dropdown-toggle-container">
@@ -27,10 +30,10 @@
                     </div>
                 </a>
                 <ul class="collapse lisst-unstyled" id="citasMedicas">
-                  <li class="container-activo">
+                  <li class="container-activo" class="text-light bg-dark">
                     <a routerLink="list-available-citas-patient" routerLinkActive="activo">Disponibles</a>
                   </li>
-                  <li class="container-activo">
+                  <li class="container-activo" class="text-light bg-dark">
                     <a routerLink="list-pendientes-cancelados-citas-patient" routerLinkActive="activo">Estado</a>
                   </li>
                   <li class="container-activo">
@@ -52,10 +55,10 @@
                     </div>
                 </a>
                 <ul class="collapse lisst-unstyled" id="logout">
-                  <li class="container-activo">
+                  <li class="container-activo" class="text-light bg-dark">
                     <a  routerLink="patient-perfil-propio" routerLinkActive="activo">Perfil</a>
                 </li>
-                    <li class="container-activo">
+                    <li class="container-activo" class="text-light bg-dark">
                         <a (click)="logout()" routerLinkActive="activo">Logout</a>
                     </li>
                 </ul>
