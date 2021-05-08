@@ -14,11 +14,12 @@ export class DoctorService {
   private urlDoctorsAvailable: string = 'paciente/doctor/disponibles';
   private urlDoctorPerfil: string = 'doctor/perfil';
   private urlChangeavailability: string = 'doctor/status';
+  private urlPerfilDoctor: string = 'doctor/perfil'
 
   private doctor: Doctor = new Doctor();
   private doctorSelect: Doctor = new Doctor();
   private listDoctorsAvailable: Array<Doctor> = new Array();
-  
+
   constructor(private authService: AuthService, private apiService: ApiService, private httpClient: HttpClient) {
 
   }
@@ -71,5 +72,10 @@ export class DoctorService {
   public Changeavailability(DoctorId: number): Observable<any>
   {
     return this.httpClient.put<any>(`${this.apiService.getUrl()}/${this.urlChangeavailability}/${DoctorId}`, '', {headers: this.authService.getHttpHeaders()})
+  }
+
+
+  public getDoctorId(){
+    return this.httpClient.get<Doctor>(`${this.apiService.getUrl()}/${this.urlPerfilDoctor}/${this.authService.getToken().usuario_id}`, {headers: this.authService.getHttpHeaders()});
   }
 }
