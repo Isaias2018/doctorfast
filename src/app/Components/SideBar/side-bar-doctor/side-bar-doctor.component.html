@@ -12,8 +12,8 @@
 
         </div>
         <ul class="lisst-unstyled components">
-          <div>
-            <p>Hola <span>{{doctor.usuario.nombre}}</span></p>
+          <div class="text-center" class="text-light bg-dark">
+            <p>Bienvenido <span>{{doctor.usuario.nombre}}</span></p>
           </div>
             <li>
                 <a routerLinkActive="activo" routerLink ="main-doctor">
@@ -55,7 +55,7 @@
                 </a>
                 <ul class="collapse lisst-unstyled" id="acount">
                     <li class="container-activo">
-                        <a routerLinkActive="activo">Perfil</a>
+                        <a routerLinkActive="activo" routerLink="doctor-perfil-propio">Perfil</a>
                     </li>
                     <li class="container-activo">
                         <a (click)="logout()" routerLinkActive="activo">Logout</a>

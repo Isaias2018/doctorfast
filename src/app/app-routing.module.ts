@@ -20,6 +20,7 @@ import { ListAppointmentAvailabilityPatientComponent } from './Components/Patien
 import { ListAppointmentCompletedPatientComponent } from './Components/Patient/list-appointment-completed/list-appointment-completed-patient.component';
 import { ListAppointmentPendingDoctorComponent } from './Components/Doctor/list-appointment-pending/list-appointment-pending-doctor.component';
 import { PatientPerfilPropioComponent } from './Components/Patient/patient-perfil-propio/patient-perfil-propio.component';
+import { DoctorPerfilPropioComponent } from './Components/Doctor/doctor-perfil-propio/doctor-perfil-propio.component';
 
 const routes: Routes = [
   {
@@ -67,6 +68,10 @@ const routes: Routes = [
           {
             path: 'appointment-pending-doctor',
             component: ListAppointmentPendingDoctorComponent
+          },
+          {
+            path: 'doctor-perfil-propio',
+            component: DoctorPerfilPropioComponent
           }
         ]
       },

@@ -11,6 +11,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 export class ListAppointmentCompletedPatientComponent implements OnInit {
 
   closeResult = '';
+
   public listAppointments: Array<Appointment> = new Array();
 
   constructor(private modalService: NgbModal,private appointmentService: AppointmentService) { }
