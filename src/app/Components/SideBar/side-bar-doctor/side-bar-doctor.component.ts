@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Doctor } from 'src/app/Model/Doctor';
 import { AuthService } from 'src/app/Services/Auth/auth.service';
 import { SideBarDoctorService } from 'src/app/Services/SideBarDoctor/side-bar-doctor.service';
 
@@ -11,6 +12,7 @@ import { SideBarDoctorService } from 'src/app/Services/SideBarDoctor/side-bar-do
 export class SideBarDoctorComponent implements OnInit {
 
   activeMenu: boolean = false;
+  doctor: Doctor = new Doctor;
 
   constructor(private authService: AuthService,private sideBarDoctorService: SideBarDoctorService, private router: Router) { }
 
