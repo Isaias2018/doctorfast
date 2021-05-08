@@ -9,6 +9,7 @@
             <th scope="col" class="text-center">Codigo</th>
             <th scope="col" class="text-center">Fecha</th>
             <th scope="col" class="text-center">Area del Sintoma</th>
+            <th scope="col" class="text-center">Descripción</th>
             <th scope="col" class="text-center">Detalle</th>
             <th scope="col" class="text-center">Estado</th>
           </tr>
@@ -18,7 +19,7 @@
                 <td class="text-center">{{appointment.codigoCita}}</td>
                 <td class="text-center">{{appointment.fechaCita | date: 'longDate'}}</td>
                 <td class="text-center">{{appointment.areaSintoma.nombre}}</td>
-
+                <td class="text-center">{{appointment.descripcion}}</td>
                 <td class="text-center">
                     <a (click)="viewAppointment()" class="btn btn-info">
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
