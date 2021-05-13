@@ -5,7 +5,7 @@
         <p>Doctor: {{medicalHistory.cita.doctor.doctor_nombre}} {{medicalHistory.cita.doctor.doctor_apellido_paterno}}</p>
     </div>
     <div class="view-medical-history-diagnostico-container">
-        <h2 class="view-medical-history-diagnostico-container-title">Diagnostico</h2>
+        <h2 class="view-medical-history-diagnostico-container-title">Diagnóstico</h2>
         <ul class="view-medical-history-diagnostico-container-list">
             <li *ngFor="let diagnostico of medicalHistory.diagnosticos" class="view-medical-history-diagnostico-container-item">
                 <h3 class="view-medical-history-diagnostico-container-item-title">{{diagnostico.nombre | titlecase }}</h3>

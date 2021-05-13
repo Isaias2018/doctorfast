@@ -4,14 +4,14 @@
 
     <form [formGroup]="formMedicalAppointment" class="medical-appointment-container-form">
         <div class="form-group">
-            <label for="sintoma">Selecciona el área de tu sintoma</label>
+            <label for="sintoma">Selecciona el área de tu síntoma</label>
             <select class="form-control" id="sintoma" name="sintomaSelec" formControlName="areaSintoma_id">
                 <option value="" selected disabled hidden>Choose here</option>
                 <option *ngFor="let symptom of listSymptom" [value]="symptom.idAreaSintoma">{{symptom.nombre}}</option>
             </select>
         </div>
         <div class="form-group">
-            <label for="" class="form-label">Describe tus sintomas:</label>
+            <label for="" class="form-label">Describe tus síntomas:</label>
             <textarea class="form-control" name="symptom" formControlName="descripcion"></textarea>
         </div>
         <div class="medical-appointment-container-dates">
