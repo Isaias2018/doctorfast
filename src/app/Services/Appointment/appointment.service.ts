@@ -16,13 +16,13 @@ export class AppointmentService {
   private urlCancelAppointment: string = 'doctor/citas/cancelar';
 
   /*DOCTOR*/
-  private urlAppointmentAvailabilityDoctor: string = 'doctor/citas/en_curso';
+  private urlAppointmentAvailabilityDoctor: string = 'doctor/citas/pendientes';
   private urlAppointmentPendingDoctor: string = 'doctor/citas/disponibles';
 
 
   /*PATIENT*/
-  private urlAppointmentAvailabilityPatient: string = 'paciente/citas/en_curso';
-  private urlAppointmentPendingPatient: string = 'paciente/citas/por_confirmar';
+  private urlAppointmentAvailabilityPatient: string = 'paciente/citas/disponibles';
+  private urlAppointmentPendingPatient: string = 'paciente/citas/pendientes';
   private urlAppointmentCompletedPatient: string = 'paciente/citas/historial';
 
 
