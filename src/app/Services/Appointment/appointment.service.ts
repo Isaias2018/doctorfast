@@ -16,8 +16,8 @@ export class AppointmentService {
   private urlCancelAppointment: string = 'doctor/citas/cancelar';
 
   /*DOCTOR*/
-  private urlAppointmentAvailabilityDoctor: string = 'doctor/citas/pendientes';
-  private urlAppointmentPendingDoctor: string = 'doctor/citas/disponibles';
+  private urlAppointmentAvailabilityDoctor: string = 'doctor/citas/disponibles';
+  private urlAppointmentPendingDoctor: string = 'doctor/citas/pendientes';
 
 
   /*PATIENT*/
